@@ -16,6 +16,8 @@
 		BB7FDCF02826ADCD00CE0F5A /* PunkApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCEF2826ADCD00CE0F5A /* PunkApiUITests.swift */; };
 		BB7FDCF22826ADCD00CE0F5A /* PunkApiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCF12826ADCD00CE0F5A /* PunkApiUITestsLaunchTests.swift */; };
 		BB7FDD042826B32700CE0F5A /* DEV.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB7FDD032826B32700CE0F5A /* DEV.xcconfig */; };
+		BB7FDD072826BAE100CE0F5A /* BundleInfoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDD062826BAE100CE0F5A /* BundleInfoURL.swift */; };
+		BB7FDD092826BAFB00CE0F5A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDD082826BAFB00CE0F5A /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BB7FDCEF2826ADCD00CE0F5A /* PunkApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiUITests.swift; sourceTree = "<group>"; };
 		BB7FDCF12826ADCD00CE0F5A /* PunkApiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BB7FDD032826B32700CE0F5A /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
+		BB7FDD062826BAE100CE0F5A /* BundleInfoURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleInfoURL.swift; sourceTree = "<group>"; };
+		BB7FDD082826BAFB00CE0F5A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		BB7FDCCD2826ADCB00CE0F5A /* PunkApi */ = {
 			isa = PBXGroup;
 			children = (
+				BB7FDD052826BAC900CE0F5A /* Extensions */,
 				BB7FDD022826B2F900CE0F5A /* Config */,
 				BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */,
 				BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */,
@@ -131,8 +136,17 @@
 			isa = PBXGroup;
 			children = (
 				BB7FDD032826B32700CE0F5A /* DEV.xcconfig */,
+				BB7FDD082826BAFB00CE0F5A /* Config.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		BB7FDD052826BAC900CE0F5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB7FDD062826BAE100CE0F5A /* BundleInfoURL.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +282,9 @@
 			files = (
 				BB7FDCD32826ADCB00CE0F5A /* ViewController.swift in Sources */,
 				BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */,
+				BB7FDD092826BAFB00CE0F5A /* Config.swift in Sources */,
 				BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */,
+				BB7FDD072826BAE100CE0F5A /* BundleInfoURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
