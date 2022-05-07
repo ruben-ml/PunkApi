@@ -15,6 +15,7 @@
 		BB7FDCE62826ADCD00CE0F5A /* PunkApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCE52826ADCD00CE0F5A /* PunkApiTests.swift */; };
 		BB7FDCF02826ADCD00CE0F5A /* PunkApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCEF2826ADCD00CE0F5A /* PunkApiUITests.swift */; };
 		BB7FDCF22826ADCD00CE0F5A /* PunkApiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCF12826ADCD00CE0F5A /* PunkApiUITestsLaunchTests.swift */; };
+		BB7FDD042826B32700CE0F5A /* DEV.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB7FDD032826B32700CE0F5A /* DEV.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB7FDCCB2826ADCB00CE0F5A /* PunkApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7FDCCB2826ADCB00CE0F5A /* PunkApi .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PunkApi .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BB7FDCD22826ADCB00CE0F5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		BB7FDCEB2826ADCD00CE0F5A /* PunkApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7FDCEF2826ADCD00CE0F5A /* PunkApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiUITests.swift; sourceTree = "<group>"; };
 		BB7FDCF12826ADCD00CE0F5A /* PunkApiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB7FDD032826B32700CE0F5A /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,7 @@
 		BB7FDCCC2826ADCB00CE0F5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB7FDCCB2826ADCB00CE0F5A /* PunkApi.app */,
+				BB7FDCCB2826ADCB00CE0F5A /* PunkApi .app */,
 				BB7FDCE12826ADCD00CE0F5A /* PunkApiTests.xctest */,
 				BB7FDCEB2826ADCD00CE0F5A /* PunkApiUITests.xctest */,
 			);
@@ -97,6 +99,7 @@
 		BB7FDCCD2826ADCB00CE0F5A /* PunkApi */ = {
 			isa = PBXGroup;
 			children = (
+				BB7FDD022826B2F900CE0F5A /* Config */,
 				BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */,
 				BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */,
 				BB7FDCD22826ADCB00CE0F5A /* ViewController.swift */,
@@ -124,12 +127,20 @@
 			path = PunkApiUITests;
 			sourceTree = "<group>";
 		};
+		BB7FDD022826B2F900CE0F5A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BB7FDD032826B32700CE0F5A /* DEV.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB7FDCCA2826ADCB00CE0F5A /* PunkApi */ = {
+		BB7FDCCA2826ADCB00CE0F5A /* PunkApi  */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB7FDCF52826ADCD00CE0F5A /* Build configuration list for PBXNativeTarget "PunkApi" */;
+			buildConfigurationList = BB7FDCF52826ADCD00CE0F5A /* Build configuration list for PBXNativeTarget "PunkApi " */;
 			buildPhases = (
 				BB7FDCC72826ADCB00CE0F5A /* Sources */,
 				BB7FDCC82826ADCB00CE0F5A /* Frameworks */,
@@ -139,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = PunkApi;
+			name = "PunkApi ";
 			productName = PunkApi;
-			productReference = BB7FDCCB2826ADCB00CE0F5A /* PunkApi.app */;
+			productReference = BB7FDCCB2826ADCB00CE0F5A /* PunkApi .app */;
 			productType = "com.apple.product-type.application";
 		};
 		BB7FDCE02826ADCD00CE0F5A /* PunkApiTests */ = {
@@ -216,7 +227,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB7FDCCA2826ADCB00CE0F5A /* PunkApi */,
+				BB7FDCCA2826ADCB00CE0F5A /* PunkApi  */,
 				BB7FDCE02826ADCD00CE0F5A /* PunkApiTests */,
 				BB7FDCEA2826ADCD00CE0F5A /* PunkApiUITests */,
 			);
@@ -230,6 +241,7 @@
 			files = (
 				BB7FDCDB2826ADCD00CE0F5A /* LaunchScreen.storyboard in Resources */,
 				BB7FDCD82826ADCD00CE0F5A /* Assets.xcassets in Resources */,
+				BB7FDD042826B32700CE0F5A /* DEV.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +294,12 @@
 /* Begin PBXTargetDependency section */
 		BB7FDCE32826ADCD00CE0F5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB7FDCCA2826ADCB00CE0F5A /* PunkApi */;
+			target = BB7FDCCA2826ADCB00CE0F5A /* PunkApi  */;
 			targetProxy = BB7FDCE22826ADCD00CE0F5A /* PBXContainerItemProxy */;
 		};
 		BB7FDCED2826ADCD00CE0F5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB7FDCCA2826ADCB00CE0F5A /* PunkApi */;
+			target = BB7FDCCA2826ADCB00CE0F5A /* PunkApi  */;
 			targetProxy = BB7FDCEC2826ADCD00CE0F5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -308,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DISPLAY_NAME = "PunkApi ";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -368,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DISPLAY_NAME = "PunkApi ";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -428,6 +442,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PunkApi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_DISPLAY_NAME)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -456,6 +471,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PunkApi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_DISPLAY_NAME)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -550,6 +566,136 @@
 			};
 			name = Release;
 		};
+		BB7FDCFE2826B28700CE0F5A /* DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7FDD032826B32700CE0F5A /* DEV.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DISPLAY_NAME = "PunkApi (Dev)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DEV;
+		};
+		BB7FDCFF2826B28700CE0F5A /* DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7FDD032826B32700CE0F5A /* DEV.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PunkApi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(APP_DISPLAY_NAME)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sm.PunkApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DEV;
+		};
+		BB7FDD002826B28700CE0F5A /* DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G7W2ANVLD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sm.PunkApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PunkApi.app/PunkApi";
+			};
+			name = DEV;
+		};
+		BB7FDD012826B28700CE0F5A /* DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G7W2ANVLD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sm.PunkApiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PunkApi;
+			};
+			name = DEV;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,15 +703,17 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB7FDCF32826ADCD00CE0F5A /* Debug */,
+				BB7FDCFE2826B28700CE0F5A /* DEV */,
 				BB7FDCF42826ADCD00CE0F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB7FDCF52826ADCD00CE0F5A /* Build configuration list for PBXNativeTarget "PunkApi" */ = {
+		BB7FDCF52826ADCD00CE0F5A /* Build configuration list for PBXNativeTarget "PunkApi " */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB7FDCF62826ADCD00CE0F5A /* Debug */,
+				BB7FDCFF2826B28700CE0F5A /* DEV */,
 				BB7FDCF72826ADCD00CE0F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -575,6 +723,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB7FDCF92826ADCD00CE0F5A /* Debug */,
+				BB7FDD002826B28700CE0F5A /* DEV */,
 				BB7FDCFA2826ADCD00CE0F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -584,6 +733,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB7FDCFC2826ADCD00CE0F5A /* Debug */,
+				BB7FDD012826B28700CE0F5A /* DEV */,
 				BB7FDCFD2826ADCD00CE0F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
