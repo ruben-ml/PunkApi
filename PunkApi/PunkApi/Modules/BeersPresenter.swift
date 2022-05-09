@@ -1,24 +1,19 @@
 //
-//  ViewController.swift
+//  BeersPresenter.swift
 //  PunkApi
 //
-//  Created by Rubén Muñoz López on 7/5/22.
+//  Created by Rubén Muñoz López on 9/5/22.
 //
 
-import UIKit
+import Foundation
 import Moya
 
-class ViewController: UIViewController {
-
+class BeersPresenter {
+    
     var beers = [Beers]()
     var beersProvider = MoyaProvider<BeersService>()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .green
-        getBeers()
-    }
-
-    private func getBeers() {
+    
+    func getBeers() {
         beersProvider.request(.getBeers(food: "Spicy")) { (result) in
             switch result {
             case .success(let response):
@@ -31,4 +26,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
