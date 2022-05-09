@@ -8,12 +8,12 @@
 import Foundation
 import Moya
 
-enum PunkApiService {
-    case getBeers
+enum BeersService {
+    case getBeers(food: String)
 }
 
-extension PunkApiService: TargetType {
-    
+extension BeersService: TargetType {
+  
     var baseURL: URL {
         return URL(string: "https://api.punkapi.com/v2")!
     }
@@ -25,29 +25,14 @@ extension PunkApiService: TargetType {
         }
     }
     
-    var method: Moya.Method { .post }
+    var method: Moya.Method { .get }
     
-    var sampleData: Data {
-        switch self {
-        case.getBeers:
-            return Data()
-        }
-    }
-    
-    private var parameters: [String: Any] {
-        var parameters = [String: Any]()
-        switch self {
-        case .getBeers:
-            parameters["food"] = "Spicy"
-            
-        }
-        return parameters
-    }
+    var sampleData: Data { Data() }
     
     var task: Task {
         switch self {
-        case .getBeers:
-            return .requestParameters(parameters: parameters, encoding: JSONEncoding.default)
+        case .getBeers(let food):
+            return .requestParameters(parameters: ["food": food], encoding: URLEncoding.queryString)
         }
     }
     

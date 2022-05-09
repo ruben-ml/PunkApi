@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Food: Decodable {
+struct Beers: Decodable {
     let id: Int?
     let name: String?
     let tagline: String?
@@ -24,4 +24,3 @@ struct Food: Decodable {
         case imageURL = "image_url"
     }
 }
-
