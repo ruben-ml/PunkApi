@@ -129,10 +129,10 @@
 		BB7A8745282954CB0025FA55 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */,
-				BB7A874128290D200025FA55 /* BeersService.swift */,
 				BB7A8743282918310025FA55 /* Beers.swift */,
 				BB7A87462829550E0025FA55 /* BeersPresenter.swift */,
+				BB7A874128290D200025FA55 /* BeersService.swift */,
+				BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -140,6 +140,7 @@
 		BB7A8748282962420025FA55 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BB7A8751282965F10025FA55 /* Extensions */,
 				BB7A8749282962570025FA55 /* LocalizableKey.swift */,
 			);
 			path = Utils;
@@ -148,6 +149,9 @@
 		BB7A874B282962D40025FA55 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB7FDCD72826ADCD00CE0F5A /* Assets.xcassets */,
+				BB7FDCDC2826ADCD00CE0F5A /* Info.plist */,
+				BB7FDCD92826ADCD00CE0F5A /* LaunchScreen.storyboard */,
 				BB7A8750282963090025FA55 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -160,6 +164,15 @@
 				BB7A8754282966F60025FA55 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB7A8756282968C50025FA55 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */,
+				BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		BB7FDCC22826ADCB00CE0F5A = {
@@ -187,15 +200,10 @@
 		BB7FDCCD2826ADCB00CE0F5A /* PunkApi */ = {
 			isa = PBXGroup;
 			children = (
-				BB7A8751282965F10025FA55 /* Extensions */,
+				BB7A8756282968C50025FA55 /* App */,
+				BB7A8745282954CB0025FA55 /* Modules */,
 				BB7A874B282962D40025FA55 /* Resources */,
 				BB7A8748282962420025FA55 /* Utils */,
-				BB7A8745282954CB0025FA55 /* Modules */,
-				BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */,
-				BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */,
-				BB7FDCD72826ADCD00CE0F5A /* Assets.xcassets */,
-				BB7FDCD92826ADCD00CE0F5A /* LaunchScreen.storyboard */,
-				BB7FDCDC2826ADCD00CE0F5A /* Info.plist */,
 			);
 			path = PunkApi;
 			sourceTree = "<group>";
