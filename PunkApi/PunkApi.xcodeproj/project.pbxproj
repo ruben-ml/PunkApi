@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		01F68A8257668D0C3622867B /* Pods_PunkApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7924244A1EA22EAD12D79571 /* Pods_PunkApiTests.framework */; };
 		B027C6315B3CCF3478BAEEF0 /* Pods_PunkApi_PunkApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857F6A63C4ED4289928679B4 /* Pods_PunkApi_PunkApiUITests.framework */; };
-		BB7A874228290D200025FA55 /* PunkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A874128290D200025FA55 /* PunkApiService.swift */; };
+		BB7A874228290D200025FA55 /* BeersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A874128290D200025FA55 /* BeersService.swift */; };
+		BB7A8744282918310025FA55 /* Beers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8743282918310025FA55 /* Beers.swift */; };
 		BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */; };
 		BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */; };
 		BB7FDCD32826ADCB00CE0F5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD22826ADCB00CE0F5A /* ViewController.swift */; };
@@ -46,7 +47,8 @@
 		857F6A63C4ED4289928679B4 /* Pods_PunkApi_PunkApiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkApi_PunkApiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEA5E9C074DD5FEF61D2FA0 /* Pods-PunkApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkApiTests.release.xcconfig"; path = "Target Support Files/Pods-PunkApiTests/Pods-PunkApiTests.release.xcconfig"; sourceTree = "<group>"; };
 		B4359A616540A0B7EB7444AE /* Pods-PunkApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkApi.release.xcconfig"; path = "Target Support Files/Pods-PunkApi/Pods-PunkApi.release.xcconfig"; sourceTree = "<group>"; };
-		BB7A874128290D200025FA55 /* PunkApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiService.swift; sourceTree = "<group>"; };
+		BB7A874128290D200025FA55 /* BeersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersService.swift; sourceTree = "<group>"; };
+		BB7A8743282918310025FA55 /* Beers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beers.swift; sourceTree = "<group>"; };
 		BB7FDCCB2826ADCB00CE0F5A /* PunkApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +147,8 @@
 				BB7FDCD72826ADCD00CE0F5A /* Assets.xcassets */,
 				BB7FDCD92826ADCD00CE0F5A /* LaunchScreen.storyboard */,
 				BB7FDCDC2826ADCD00CE0F5A /* Info.plist */,
-				BB7A874128290D200025FA55 /* PunkApiService.swift */,
+				BB7A874128290D200025FA55 /* BeersService.swift */,
+				BB7A8743282918310025FA55 /* Beers.swift */,
 			);
 			path = PunkApi;
 			sourceTree = "<group>";
@@ -405,7 +408,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB7A874228290D200025FA55 /* PunkApiService.swift in Sources */,
+				BB7A8744282918310025FA55 /* Beers.swift in Sources */,
+				BB7A874228290D200025FA55 /* BeersService.swift in Sources */,
 				BB7FDCD32826ADCB00CE0F5A /* ViewController.swift in Sources */,
 				BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */,
 				BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */,
