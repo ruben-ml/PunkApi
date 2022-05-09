@@ -14,6 +14,8 @@
 		BB7A87472829550E0025FA55 /* BeersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A87462829550E0025FA55 /* BeersPresenter.swift */; };
 		BB7A874A282962570025FA55 /* LocalizableKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8749282962570025FA55 /* LocalizableKey.swift */; };
 		BB7A874E282963090025FA55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB7A8750282963090025FA55 /* Localizable.strings */; };
+		BB7A8753282966080025FA55 /* Localizable+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8752282966080025FA55 /* Localizable+Strings.swift */; };
+		BB7A8755282966F60025FA55 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8754282966F60025FA55 /* UIView+Extension.swift */; };
 		BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */; };
 		BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */; };
 		BB7FDCD32826ADCB00CE0F5A /* BeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */; };
@@ -55,6 +57,8 @@
 		BB7A87462829550E0025FA55 /* BeersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersPresenter.swift; sourceTree = "<group>"; };
 		BB7A8749282962570025FA55 /* LocalizableKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableKey.swift; sourceTree = "<group>"; };
 		BB7A874F282963090025FA55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB7A8752282966080025FA55 /* Localizable+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localizable+Strings.swift"; sourceTree = "<group>"; };
+		BB7A8754282966F60025FA55 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BB7FDCCB2826ADCB00CE0F5A /* PunkApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		BB7A8751282965F10025FA55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB7A8752282966080025FA55 /* Localizable+Strings.swift */,
+				BB7A8754282966F60025FA55 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BB7FDCC22826ADCB00CE0F5A = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +187,7 @@
 		BB7FDCCD2826ADCB00CE0F5A /* PunkApi */ = {
 			isa = PBXGroup;
 			children = (
+				BB7A8751282965F10025FA55 /* Extensions */,
 				BB7A874B282962D40025FA55 /* Resources */,
 				BB7A8748282962420025FA55 /* Utils */,
 				BB7A8745282954CB0025FA55 /* Modules */,
@@ -445,6 +459,8 @@
 				BB7A87472829550E0025FA55 /* BeersPresenter.swift in Sources */,
 				BB7A8744282918310025FA55 /* Beers.swift in Sources */,
 				BB7A874228290D200025FA55 /* BeersService.swift in Sources */,
+				BB7A8755282966F60025FA55 /* UIView+Extension.swift in Sources */,
+				BB7A8753282966080025FA55 /* Localizable+Strings.swift in Sources */,
 				BB7FDCD32826ADCB00CE0F5A /* BeersViewController.swift in Sources */,
 				BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */,
 				BB7A874A282962570025FA55 /* LocalizableKey.swift in Sources */,

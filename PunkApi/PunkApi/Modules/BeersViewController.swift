@@ -12,7 +12,7 @@ class BeersViewController: UIViewController {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = LocalizableKey.titleLabel.localizedCapitalized
+        label.text = LocalizableKey.titleLabel.localized
         label.textColor = .black
         label.textAlignment = .center
         label.font = UIFont.init(name: "HelveticaNeue-Bold", size: 25)
