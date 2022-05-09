@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192970738EDB9C6F4B96C811 /* Pods_PunkApi_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB3E15BEB89972ADA5F9AC9 /* Pods_PunkApi_.framework */; };
 		BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */; };
 		BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */; };
 		BB7FDCD32826ADCB00CE0F5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD22826ADCB00CE0F5A /* ViewController.swift */; };
@@ -38,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DB3E15BEB89972ADA5F9AC9 /* Pods_PunkApi_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkApi_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737C7A84DE6C8D9AEDB0609A /* Pods-PunkApi .dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkApi .dev.xcconfig"; path = "Target Support Files/Pods-PunkApi /Pods-PunkApi .dev.xcconfig"; sourceTree = "<group>"; };
+		89CD06C7C4509CBBD113599F /* Pods-PunkApi .release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkApi .release.xcconfig"; path = "Target Support Files/Pods-PunkApi /Pods-PunkApi .release.xcconfig"; sourceTree = "<group>"; };
+		9AEDEB031EE8BE7C61998246 /* Pods-PunkApi .debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkApi .debug.xcconfig"; path = "Target Support Files/Pods-PunkApi /Pods-PunkApi .debug.xcconfig"; sourceTree = "<group>"; };
 		BB7FDCCB2826ADCB00CE0F5A /* PunkApi .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PunkApi .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192970738EDB9C6F4B96C811 /* Pods_PunkApi_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D47E7FBBA48AAE55C0B5740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DB3E15BEB89972ADA5F9AC9 /* Pods_PunkApi_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		943EC7C65CAB22F091530448 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AEDEB031EE8BE7C61998246 /* Pods-PunkApi .debug.xcconfig */,
+				737C7A84DE6C8D9AEDB0609A /* Pods-PunkApi .dev.xcconfig */,
+				89CD06C7C4509CBBD113599F /* Pods-PunkApi .release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BB7FDCC22826ADCB00CE0F5A = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +112,8 @@
 				BB7FDCE42826ADCD00CE0F5A /* PunkApiTests */,
 				BB7FDCEE2826ADCD00CE0F5A /* PunkApiUITests */,
 				BB7FDCCC2826ADCB00CE0F5A /* Products */,
+				943EC7C65CAB22F091530448 /* Pods */,
+				0D47E7FBBA48AAE55C0B5740 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB7FDCF52826ADCD00CE0F5A /* Build configuration list for PBXNativeTarget "PunkApi " */;
 			buildPhases = (
+				85AAD9662FFBA73D2122FE29 /* [CP] Check Pods Manifest.lock */,
 				BB7FDCC72826ADCB00CE0F5A /* Sources */,
 				BB7FDCC82826ADCB00CE0F5A /* Frameworks */,
 				BB7FDCC92826ADCB00CE0F5A /* Resources */,
+				C60DE01E5612DD21BFF09121 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,6 +303,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85AAD9662FFBA73D2122FE29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PunkApi -checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C60DE01E5612DD21BFF09121 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunkApi /Pods-PunkApi -frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunkApi /Pods-PunkApi -frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PunkApi /Pods-PunkApi -frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB7FDCC72826ADCB00CE0F5A /* Sources */ = {
@@ -450,6 +521,7 @@
 		};
 		BB7FDCF62826ADCD00CE0F5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7FDD032826B32700CE0F5A /* DEV.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +551,7 @@
 		};
 		BB7FDCF72826ADCD00CE0F5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89CD06C7C4509CBBD113599F /* Pods-PunkApi .release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
