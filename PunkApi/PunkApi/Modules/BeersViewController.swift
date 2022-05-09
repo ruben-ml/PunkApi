@@ -21,19 +21,20 @@ class BeersViewController: UIViewController {
         return label
     }()
 
-//    private lazy var searchBar: UISearchController = {
-//        let search = UISearchController(searchResultsController: nil)
-//        search.searchResultsUpdater = self
-//        search.obscuresBackgroundDuringPresentation = false
-//        search.searchBar.placeholder = LocalizableKey.placeholderSearch.localized
-//        search.searchBar.sizeToFit()
-//        search.searchBar.searchBarStyle = .prominent
-//        search.delegate = self
-//        return search
-//    }()
+    private lazy var searchBar: UISearchController = {
+        let search = UISearchController(searchResultsController: nil)
+        search.searchResultsUpdater = self
+        search.obscuresBackgroundDuringPresentation = false
+        search.searchBar.placeholder = LocalizableKey.placeholderSearch.localized
+        search.searchBar.sizeToFit()
+        search.searchBar.searchBarStyle = .prominent
+        search.delegate = self
+        return search
+    }()
     
     private lazy var tableView: UITableView = {
         let table = UITableView()
+        table.tableHeaderView = searchBar.searchBar
         table.translatesAutoresizingMaskIntoConstraints = false
         table.delegate = self
         table.dataSource = self
@@ -72,21 +73,21 @@ class BeersViewController: UIViewController {
             tableView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 
 }
 
-//extension BeersViewController: UISearchResultsUpdating {
-//    func updateSearchResults(for searchController: UISearchController) {
-//        self.tableView.reloadData()
-//    }
-//}
-//
-//extension BeersViewController: UISearchControllerDelegate {
-//    
-//}
+extension BeersViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        self.tableView.reloadData()
+    }
+}
+
+extension BeersViewController: UISearchControllerDelegate {
+    
+}
 
 extension BeersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
