@@ -9,4 +9,5 @@ import Foundation
 
 struct LocalizableKey {
     static let titleLabel = "title_label"
+    static let placeholderSearch = "placeholder_search"
 }

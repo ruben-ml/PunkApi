@@ -10,6 +10,7 @@ import Moya
 
 class BeersViewController: UIViewController {
     
+    
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = LocalizableKey.titleLabel.localized
@@ -20,6 +21,26 @@ class BeersViewController: UIViewController {
         return label
     }()
 
+//    private lazy var searchBar: UISearchController = {
+//        let search = UISearchController(searchResultsController: nil)
+//        search.searchResultsUpdater = self
+//        search.obscuresBackgroundDuringPresentation = false
+//        search.searchBar.placeholder = LocalizableKey.placeholderSearch.localized
+//        search.searchBar.sizeToFit()
+//        search.searchBar.searchBarStyle = .prominent
+//        search.delegate = self
+//        return search
+//    }()
+    
+    private lazy var tableView: UITableView = {
+        let table = UITableView()
+        table.translatesAutoresizingMaskIntoConstraints = false
+        table.delegate = self
+        table.dataSource = self
+        table.register(cellType: BeersTVCell.self)
+        return table
+    }()
+    
     var presenter: BeersPresenter?
     
     init(presenter: BeersPresenter) {
@@ -33,9 +54,9 @@ class BeersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .orange
         presenter?.getBeers()
-        view.addSubview(titleLabel)
+        view.addSubviews([titleLabel, tableView])
         setupNavigationUI()
     }
 
@@ -46,7 +67,40 @@ class BeersViewController: UIViewController {
             titleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             titleLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20)
         ])
+        
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
+            tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
     }
 
 }
 
+//extension BeersViewController: UISearchResultsUpdating {
+//    func updateSearchResults(for searchController: UISearchController) {
+//        self.tableView.reloadData()
+//    }
+//}
+//
+//extension BeersViewController: UISearchControllerDelegate {
+//    
+//}
+
+extension BeersViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: BeersTVCell.self)
+        return cell
+    }
+}
+
+extension BeersViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+}

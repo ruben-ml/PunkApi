@@ -16,6 +16,10 @@
 		BB7A874E282963090025FA55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB7A8750282963090025FA55 /* Localizable.strings */; };
 		BB7A8753282966080025FA55 /* Localizable+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8752282966080025FA55 /* Localizable+Strings.swift */; };
 		BB7A8755282966F60025FA55 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8754282966F60025FA55 /* UIView+Extension.swift */; };
+		BB7A87582829B0990025FA55 /* BeersTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A87572829B0990025FA55 /* BeersTVCell.swift */; };
+		BB7A875E2829B5740025FA55 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A875D2829B5740025FA55 /* Reusable.swift */; };
+		BB7A87602829B5870025FA55 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A875F2829B5870025FA55 /* UITableView+Reusable.swift */; };
+		BB7A87622829B5CB0025FA55 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A87612829B5CB0025FA55 /* NibLoadable.swift */; };
 		BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */; };
 		BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */; };
 		BB7FDCD32826ADCB00CE0F5A /* BeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */; };
@@ -59,6 +63,10 @@
 		BB7A874F282963090025FA55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BB7A8752282966080025FA55 /* Localizable+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localizable+Strings.swift"; sourceTree = "<group>"; };
 		BB7A8754282966F60025FA55 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		BB7A87572829B0990025FA55 /* BeersTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersTVCell.swift; sourceTree = "<group>"; };
+		BB7A875D2829B5740025FA55 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		BB7A875F2829B5870025FA55 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		BB7A87612829B5CB0025FA55 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		BB7FDCCB2826ADCB00CE0F5A /* PunkApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 				BB7A87462829550E0025FA55 /* BeersPresenter.swift */,
 				BB7A874128290D200025FA55 /* BeersService.swift */,
 				BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */,
+				BB7A87572829B0990025FA55 /* BeersTVCell.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -162,6 +171,9 @@
 			children = (
 				BB7A8752282966080025FA55 /* Localizable+Strings.swift */,
 				BB7A8754282966F60025FA55 /* UIView+Extension.swift */,
+				BB7A875D2829B5740025FA55 /* Reusable.swift */,
+				BB7A875F2829B5870025FA55 /* UITableView+Reusable.swift */,
+				BB7A87612829B5CB0025FA55 /* NibLoadable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -465,13 +477,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7A87472829550E0025FA55 /* BeersPresenter.swift in Sources */,
+				BB7A875E2829B5740025FA55 /* Reusable.swift in Sources */,
 				BB7A8744282918310025FA55 /* Beers.swift in Sources */,
 				BB7A874228290D200025FA55 /* BeersService.swift in Sources */,
+				BB7A87602829B5870025FA55 /* UITableView+Reusable.swift in Sources */,
 				BB7A8755282966F60025FA55 /* UIView+Extension.swift in Sources */,
 				BB7A8753282966080025FA55 /* Localizable+Strings.swift in Sources */,
+				BB7A87582829B0990025FA55 /* BeersTVCell.swift in Sources */,
 				BB7FDCD32826ADCB00CE0F5A /* BeersViewController.swift in Sources */,
 				BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */,
 				BB7A874A282962570025FA55 /* LocalizableKey.swift in Sources */,
+				BB7A87622829B5CB0025FA55 /* NibLoadable.swift in Sources */,
 				BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,7 +668,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PunkApi/Info.plist;
+				INFOPLIST_FILE = PunkApi/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -681,7 +697,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PunkApi/Info.plist;
+				INFOPLIST_FILE = PunkApi/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
