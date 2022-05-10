@@ -33,16 +33,20 @@ class BeersViewController: UIViewController {
     }()
     
     private lazy var tableView: UITableView = {
-        let table = UITableView()
+        let table = UITableView(frame: .zero, style: .plain)
         table.tableHeaderView = searchBar.searchBar
-        table.translatesAutoresizingMaskIntoConstraints = false
         table.delegate = self
         table.dataSource = self
+        table.backgroundColor = .white
+        table.estimatedRowHeight = 70
+        table.separatorStyle = UITableViewCell.SeparatorStyle.none
+        table.rowHeight = UITableView.automaticDimension
         table.register(cellType: BeersTVCell.self)
+        table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
     
-    var presenter: BeersPresenter?
+    var presenter: BeersPresenter
     
     init(presenter: BeersPresenter) {
         self.presenter = presenter
@@ -56,7 +60,7 @@ class BeersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .orange
-        presenter?.getBeers()
+        presenter.getBeers()
         view.addSubviews([titleLabel, tableView])
         setupNavigationUI()
     }
@@ -96,6 +100,10 @@ extension BeersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: BeersTVCell.self)
+//        cell.beersCellData = presenter.beers[indexPath.row]
+//        cell.titleLabel.text = presenter.beers[indexPath.row].name
+//        cell.presenter = presenter
+        cell.selectionStyle = .none
         return cell
     }
 }
