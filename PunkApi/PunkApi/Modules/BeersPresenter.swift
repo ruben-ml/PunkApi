@@ -10,4 +10,9 @@ import Moya
 
 class BeersPresenter {
 
+    var view: BeersViewApi?
+    
+    func viewDidLoad() {
+        view?.getBeers()
+    }
 }

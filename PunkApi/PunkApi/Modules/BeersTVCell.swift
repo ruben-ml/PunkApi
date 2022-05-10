@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class BeersTVCell: UITableViewCell {
+class BeersTVCell: UITableViewCell, Reusable {
     
     private lazy var infoView: UIView = {
         let view = UIView()
@@ -29,6 +29,7 @@ class BeersTVCell: UITableViewCell {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
+        label.numberOfLines = 0
         label.textAlignment = .center
         label.font = UIFont.init(name: "HelveticaNeue-Bold", size: 18)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -71,6 +72,7 @@ class BeersTVCell: UITableViewCell {
             borderLeftView.widthAnchor.constraint(equalToConstant: 5)
         ])
         NSLayoutConstraint.activate([
+            
             titleLabel.centerXAnchor.constraint(equalTo: infoView.centerXAnchor),
             titleLabel.centerYAnchor.constraint(equalTo: infoView.centerYAnchor)
         ])

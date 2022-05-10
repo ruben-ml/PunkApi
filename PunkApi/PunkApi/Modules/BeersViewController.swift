@@ -8,8 +8,10 @@
 import UIKit
 import Moya
 
+protocol BeersViewApi {
+    func getBeers()
+}
 class BeersViewController: UIViewController {
-    
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -41,7 +43,7 @@ class BeersViewController: UIViewController {
         table.estimatedRowHeight = 70
         table.separatorStyle = UITableViewCell.SeparatorStyle.none
         table.rowHeight = UITableView.automaticDimension
-        table.register(BeersTVCell.self, forCellReuseIdentifier: "cell")
+        table.register(cellType: BeersTVCell.self)
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
@@ -64,12 +66,7 @@ class BeersViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .orange
         view.addSubviews([titleLabel, tableView])
-        networkProvider.getBeers { data in
-            self.beers = data
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
+        presenter.viewDidLoad()
         setupNavigationUI()
     }
 
@@ -107,7 +104,7 @@ extension BeersViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? BeersTVCell else { fatalError("not cell implemented")}
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: BeersTVCell.self)
         cell.beersData = beers[indexPath.row]
 //        cell.presenter = presenter
         cell.selectionStyle = .none
@@ -118,5 +115,16 @@ extension BeersViewController: UITableViewDataSource {
 extension BeersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+extension BeersViewController: BeersViewApi {
+    func getBeers() {
+        networkProvider.getBeers { data in
+            self.beers = data
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 }

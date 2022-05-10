@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let provider = NetworkManager()
         let beersPresenter = BeersPresenter()
         let beersVC = BeersViewController(presenter: beersPresenter, networkProvider: provider)
-        
+        beersPresenter.view = beersVC
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = beersVC
         window?.makeKeyAndVisible()
