@@ -60,8 +60,13 @@ class BeersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .orange
-        presenter.getBeers()
         view.addSubviews([titleLabel, tableView])
+        presenter.getBeers { data in
+            self.presenter.beers = data
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
         setupNavigationUI()
     }
 
@@ -95,14 +100,13 @@ extension BeersViewController: UISearchControllerDelegate {
 
 extension BeersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return presenter.beers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: BeersTVCell.self)
-//        cell.beersCellData = presenter.beers[indexPath.row]
-//        cell.titleLabel.text = presenter.beers[indexPath.row].name
-//        cell.presenter = presenter
+        cell.beersCellData = presenter.beers[indexPath.row]
+        cell.presenter = presenter
         cell.selectionStyle = .none
         return cell
     }
