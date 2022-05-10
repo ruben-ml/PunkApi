@@ -21,6 +21,7 @@
 		BB7A87602829B5870025FA55 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A875F2829B5870025FA55 /* UITableView+Reusable.swift */; };
 		BB7A87622829B5CB0025FA55 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A87612829B5CB0025FA55 /* NibLoadable.swift */; };
 		BB7A8764282A38300025FA55 /* Shadow+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8763282A38300025FA55 /* Shadow+CALayer.swift */; };
+		BB7A8766282A648A0025FA55 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8765282A648A0025FA55 /* NetworkManager.swift */; };
 		BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */; };
 		BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */; };
 		BB7FDCD32826ADCB00CE0F5A /* BeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */; };
@@ -69,6 +70,7 @@
 		BB7A875F2829B5870025FA55 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		BB7A87612829B5CB0025FA55 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		BB7A8763282A38300025FA55 /* Shadow+CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shadow+CALayer.swift"; sourceTree = "<group>"; };
+		BB7A8765282A648A0025FA55 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BB7FDCCB2826ADCB00CE0F5A /* PunkApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				BB7A874128290D200025FA55 /* BeersService.swift */,
 				BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */,
 				BB7A87572829B0990025FA55 /* BeersTVCell.swift */,
+				BB7A8765282A648A0025FA55 /* NetworkManager.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				BB7FDCD32826ADCB00CE0F5A /* BeersViewController.swift in Sources */,
 				BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */,
 				BB7A874A282962570025FA55 /* LocalizableKey.swift in Sources */,
+				BB7A8766282A648A0025FA55 /* NetworkManager.swift in Sources */,
 				BB7A87622829B5CB0025FA55 /* NibLoadable.swift in Sources */,
 				BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */,
 			);

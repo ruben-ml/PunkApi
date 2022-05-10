@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class BeersTVCell: UITableViewCell, Reusable {
+class BeersTVCell: UITableViewCell {
     
     private lazy var infoView: UIView = {
         let view = UIView()
@@ -35,9 +35,9 @@ class BeersTVCell: UITableViewCell, Reusable {
         return label
     }()
     
-    var beersCellData: Beers? {
+    var beersData: Beers? {
         didSet{
-            titleLabel.text = beersCellData?.name
+            titleLabel.text = beersData?.name
         }
     }
     
@@ -53,7 +53,6 @@ class BeersTVCell: UITableViewCell, Reusable {
     }
     
     private func setupUI() {
-        backgroundColor = .clear
         contentView.addSubview(infoView)
         infoView.addSubviews([borderLeftView, titleLabel])
         
@@ -72,9 +71,8 @@ class BeersTVCell: UITableViewCell, Reusable {
             borderLeftView.widthAnchor.constraint(equalToConstant: 5)
         ])
         NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: infoView.trailingAnchor, constant: 16),
-            titleLabel.topAnchor.constraint(equalTo: infoView.topAnchor, constant: 16),
-            titleLabel.trailingAnchor.constraint(greaterThanOrEqualTo: infoView.trailingAnchor, constant: -16)
+            titleLabel.centerXAnchor.constraint(equalTo: infoView.centerXAnchor),
+            titleLabel.centerYAnchor.constraint(equalTo: infoView.centerYAnchor)
         ])
     }
 }

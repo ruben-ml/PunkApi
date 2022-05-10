@@ -41,15 +41,18 @@ class BeersViewController: UIViewController {
         table.estimatedRowHeight = 70
         table.separatorStyle = UITableViewCell.SeparatorStyle.none
         table.rowHeight = UITableView.automaticDimension
-        table.register(cellType: BeersTVCell.self)
+        table.register(BeersTVCell.self, forCellReuseIdentifier: "cell")
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
     
+    var beers = [Beers]()
     var presenter: BeersPresenter
-    
-    init(presenter: BeersPresenter) {
+    var networkProvider: Networkable
+        
+    init(presenter: BeersPresenter, networkProvider: Networkable) {
         self.presenter = presenter
+        self.networkProvider = networkProvider
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -61,8 +64,8 @@ class BeersViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .orange
         view.addSubviews([titleLabel, tableView])
-        presenter.getBeers { data in
-            self.presenter.beers = data
+        networkProvider.getBeers { data in
+            self.beers = data
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -100,13 +103,13 @@ extension BeersViewController: UISearchControllerDelegate {
 
 extension BeersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.beers.count
+        return beers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: BeersTVCell.self)
-        cell.beersCellData = presenter.beers[indexPath.row]
-        cell.presenter = presenter
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? BeersTVCell else { fatalError("not cell implemented")}
+        cell.beersData = beers[indexPath.row]
+//        cell.presenter = presenter
         cell.selectionStyle = .none
         return cell
     }

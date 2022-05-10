@@ -15,7 +15,8 @@ enum BeersService {
 extension BeersService: TargetType {
   
     var baseURL: URL {
-        return URL(string: "https://api.punkapi.com/v2")!
+        guard let url = URL(string: "https://api.punkapi.com/v2") else { fatalError("url not found")}
+        return url
     }
     
     var path: String {
