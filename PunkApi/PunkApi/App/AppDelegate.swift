@@ -7,9 +7,15 @@
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    class func sharedAppDelegate() -> AppDelegate? {
+        
+        return UIApplication.shared.delegate as? AppDelegate
+        
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -32,3 +38,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    
+    func showViewController(_ viewController: UIViewController, addTransition: Bool = false) {
+        
+        guard let window = UIApplication.shared.keyWindow else { return }
+        
+        let previousViewController = window.rootViewController
+    
+        if addTransition {
+            addTransitionAnimation(window: window)
+        }
+        window.rootViewController = viewController
+        
+        if UIView.areAnimationsEnabled {
+            UIView.animate(withDuration: CATransaction.animationDuration()) {
+                viewController.setNeedsStatusBarAppearanceUpdate()
+            }
+        } else {
+            viewController.setNeedsStatusBarAppearanceUpdate()
+        }
+        
+        if let previousViewController = previousViewController {
+            
+            // Allow the view controller to be deallocate
+            previousViewController.dismiss(animated: false) {
+            // Remove the root view in case its still showing
+            previousViewController.view.removeFromSuperview()
+            }
+        }
+       // window.tintColor = .white
+        window.makeKeyAndVisible()
+    }
+    
+    private func addTransitionAnimation(window: UIWindow) {
+        let transition = CATransition()
+        transition.type = .fade
+        transition.duration = 0.3
+        transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        window.layer.add(transition, forKey: kCATransition)
+    }
+}

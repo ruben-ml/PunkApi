@@ -17,8 +17,7 @@ class BeersPresenter {
     }
     
     func didSelectCellAtIndexPath(indexPath: IndexPath) {
-        view?.didPressCell(sender: indexPath)
-    }
+        view?.didPressCell(indexPath: indexPath)    }
     
 }
 

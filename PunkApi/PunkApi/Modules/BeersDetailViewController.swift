@@ -77,15 +77,21 @@ class BeersDetailViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        view.addSubview(contentStack)
+        view.backgroundColor = .orange
+        view.addSubview(titleNameLabel)
         setupUI()
     }
     
     private func setupUI() {
+//        NSLayoutConstraint.activate([
+//            contentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+//            contentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+//        ])
         NSLayoutConstraint.activate([
-            contentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            contentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            titleNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            titleNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            titleNameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20)
+        
         ])
     }
     
