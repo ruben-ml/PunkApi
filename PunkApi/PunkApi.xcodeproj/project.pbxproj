@@ -9,14 +9,29 @@
 /* Begin PBXBuildFile section */
 		01F68A8257668D0C3622867B /* Pods_PunkApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7924244A1EA22EAD12D79571 /* Pods_PunkApiTests.framework */; };
 		B027C6315B3CCF3478BAEEF0 /* Pods_PunkApi_PunkApiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857F6A63C4ED4289928679B4 /* Pods_PunkApi_PunkApiUITests.framework */; };
+		BB7A874228290D200025FA55 /* BeersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A874128290D200025FA55 /* BeersService.swift */; };
+		BB7A8744282918310025FA55 /* Beers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8743282918310025FA55 /* Beers.swift */; };
+		BB7A87472829550E0025FA55 /* BeersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A87462829550E0025FA55 /* BeersPresenter.swift */; };
+		BB7A874A282962570025FA55 /* LocalizableKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8749282962570025FA55 /* LocalizableKey.swift */; };
+		BB7A874E282963090025FA55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB7A8750282963090025FA55 /* Localizable.strings */; };
+		BB7A8753282966080025FA55 /* Localizable+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8752282966080025FA55 /* Localizable+Strings.swift */; };
+		BB7A8755282966F60025FA55 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8754282966F60025FA55 /* UIView+Extension.swift */; };
+		BB7A87582829B0990025FA55 /* BeersTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A87572829B0990025FA55 /* BeersTVCell.swift */; };
+		BB7A875E2829B5740025FA55 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A875D2829B5740025FA55 /* Reusable.swift */; };
+		BB7A87602829B5870025FA55 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A875F2829B5870025FA55 /* UITableView+Reusable.swift */; };
+		BB7A87622829B5CB0025FA55 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A87612829B5CB0025FA55 /* NibLoadable.swift */; };
+		BB7A8764282A38300025FA55 /* Shadow+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8763282A38300025FA55 /* Shadow+CALayer.swift */; };
+		BB7A8766282A648A0025FA55 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A8765282A648A0025FA55 /* NetworkManager.swift */; };
 		BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */; };
 		BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */; };
-		BB7FDCD32826ADCB00CE0F5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD22826ADCB00CE0F5A /* ViewController.swift */; };
+		BB7FDCD32826ADCB00CE0F5A /* BeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */; };
 		BB7FDCD82826ADCD00CE0F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7FDCD72826ADCD00CE0F5A /* Assets.xcassets */; };
 		BB7FDCDB2826ADCD00CE0F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7FDCD92826ADCD00CE0F5A /* LaunchScreen.storyboard */; };
 		BB7FDCE62826ADCD00CE0F5A /* PunkApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCE52826ADCD00CE0F5A /* PunkApiTests.swift */; };
 		BB7FDCF02826ADCD00CE0F5A /* PunkApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCEF2826ADCD00CE0F5A /* PunkApiUITests.swift */; };
 		BB7FDCF22826ADCD00CE0F5A /* PunkApiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FDCF12826ADCD00CE0F5A /* PunkApiUITestsLaunchTests.swift */; };
+		BBAF601F282B0A2F004EBE52 /* BeersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF601E282B0A2F004EBE52 /* BeersDetailViewController.swift */; };
+		BBAF6021282B0D80004EBE52 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF6020282B0D80004EBE52 /* ImageLoader.swift */; };
 		EA837B2B0B594A61F3AC9279 /* Pods_PunkApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C084207112DDE70DA9FC0630 /* Pods_PunkApi.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,10 +60,23 @@
 		857F6A63C4ED4289928679B4 /* Pods_PunkApi_PunkApiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkApi_PunkApiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEA5E9C074DD5FEF61D2FA0 /* Pods-PunkApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkApiTests.release.xcconfig"; path = "Target Support Files/Pods-PunkApiTests/Pods-PunkApiTests.release.xcconfig"; sourceTree = "<group>"; };
 		B4359A616540A0B7EB7444AE /* Pods-PunkApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkApi.release.xcconfig"; path = "Target Support Files/Pods-PunkApi/Pods-PunkApi.release.xcconfig"; sourceTree = "<group>"; };
+		BB7A874128290D200025FA55 /* BeersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersService.swift; sourceTree = "<group>"; };
+		BB7A8743282918310025FA55 /* Beers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beers.swift; sourceTree = "<group>"; };
+		BB7A87462829550E0025FA55 /* BeersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersPresenter.swift; sourceTree = "<group>"; };
+		BB7A8749282962570025FA55 /* LocalizableKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableKey.swift; sourceTree = "<group>"; };
+		BB7A874F282963090025FA55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB7A8752282966080025FA55 /* Localizable+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localizable+Strings.swift"; sourceTree = "<group>"; };
+		BB7A8754282966F60025FA55 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		BB7A87572829B0990025FA55 /* BeersTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersTVCell.swift; sourceTree = "<group>"; };
+		BB7A875D2829B5740025FA55 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		BB7A875F2829B5870025FA55 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		BB7A87612829B5CB0025FA55 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		BB7A8763282A38300025FA55 /* Shadow+CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shadow+CALayer.swift"; sourceTree = "<group>"; };
+		BB7A8765282A648A0025FA55 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BB7FDCCB2826ADCB00CE0F5A /* PunkApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB7FDCD22826ADCB00CE0F5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewController.swift; sourceTree = "<group>"; };
 		BB7FDCD72826ADCD00CE0F5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB7FDCDA2826ADCD00CE0F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB7FDCDC2826ADCD00CE0F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +85,8 @@
 		BB7FDCEB2826ADCD00CE0F5A /* PunkApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7FDCEF2826ADCD00CE0F5A /* PunkApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiUITests.swift; sourceTree = "<group>"; };
 		BB7FDCF12826ADCD00CE0F5A /* PunkApiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkApiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BBAF601E282B0A2F004EBE52 /* BeersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersDetailViewController.swift; sourceTree = "<group>"; };
+		BBAF6020282B0D80004EBE52 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		C084207112DDE70DA9FC0630 /* Pods_PunkApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE64E3C6B5B9E850A58ADBDD /* Pods-PunkApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkApi.debug.xcconfig"; path = "Target Support Files/Pods-PunkApi/Pods-PunkApi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,8 +139,80 @@
 				56A177E475E7FECE44422C75 /* Pods-PunkApiTests.debug.xcconfig */,
 				AAEA5E9C074DD5FEF61D2FA0 /* Pods-PunkApiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB28ECCC282C25C60031795A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BB7A8743282918310025FA55 /* Beers.swift */,
+				BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */,
+				BB7A87462829550E0025FA55 /* BeersPresenter.swift */,
+				BB7A87572829B0990025FA55 /* BeersTVCell.swift */,
+				BB7A874128290D200025FA55 /* BeersService.swift */,
+				BB7A8765282A648A0025FA55 /* NetworkManager.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BB28ECCD282C25F10031795A /* BeersDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF601E282B0A2F004EBE52 /* BeersDetailViewController.swift */,
+			);
+			path = BeersDetail;
+			sourceTree = "<group>";
+		};
+		BB7A8745282954CB0025FA55 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BB28ECCD282C25F10031795A /* BeersDetail */,
+				BB28ECCC282C25C60031795A /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BB7A8748282962420025FA55 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BB7A8751282965F10025FA55 /* Extensions */,
+				BB7A8749282962570025FA55 /* LocalizableKey.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BB7A874B282962D40025FA55 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB7FDCD72826ADCD00CE0F5A /* Assets.xcassets */,
+				BB7FDCDC2826ADCD00CE0F5A /* Info.plist */,
+				BB7FDCD92826ADCD00CE0F5A /* LaunchScreen.storyboard */,
+				BB7A8750282963090025FA55 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB7A8751282965F10025FA55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB7A8752282966080025FA55 /* Localizable+Strings.swift */,
+				BB7A8754282966F60025FA55 /* UIView+Extension.swift */,
+				BB7A875D2829B5740025FA55 /* Reusable.swift */,
+				BB7A875F2829B5870025FA55 /* UITableView+Reusable.swift */,
+				BB7A87612829B5CB0025FA55 /* NibLoadable.swift */,
+				BB7A8763282A38300025FA55 /* Shadow+CALayer.swift */,
+				BBAF6020282B0D80004EBE52 /* ImageLoader.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB7A8756282968C50025FA55 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */,
+				BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		BB7FDCC22826ADCB00CE0F5A = {
@@ -138,12 +240,10 @@
 		BB7FDCCD2826ADCB00CE0F5A /* PunkApi */ = {
 			isa = PBXGroup;
 			children = (
-				BB7FDCCE2826ADCB00CE0F5A /* AppDelegate.swift */,
-				BB7FDCD02826ADCB00CE0F5A /* SceneDelegate.swift */,
-				BB7FDCD22826ADCB00CE0F5A /* ViewController.swift */,
-				BB7FDCD72826ADCD00CE0F5A /* Assets.xcassets */,
-				BB7FDCD92826ADCD00CE0F5A /* LaunchScreen.storyboard */,
-				BB7FDCDC2826ADCD00CE0F5A /* Info.plist */,
+				BB7A8756282968C50025FA55 /* App */,
+				BB7A8745282954CB0025FA55 /* Modules */,
+				BB7A874B282962D40025FA55 /* Resources */,
+				BB7A8748282962420025FA55 /* Utils */,
 			);
 			path = PunkApi;
 			sourceTree = "<group>";
@@ -275,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7FDCDB2826ADCD00CE0F5A /* LaunchScreen.storyboard in Resources */,
+				BB7A874E282963090025FA55 /* Localizable.strings in Resources */,
 				BB7FDCD82826ADCD00CE0F5A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,8 +504,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB7FDCD32826ADCB00CE0F5A /* ViewController.swift in Sources */,
+				BB7A87472829550E0025FA55 /* BeersPresenter.swift in Sources */,
+				BB7A875E2829B5740025FA55 /* Reusable.swift in Sources */,
+				BB7A8744282918310025FA55 /* Beers.swift in Sources */,
+				BB7A874228290D200025FA55 /* BeersService.swift in Sources */,
+				BB7A87602829B5870025FA55 /* UITableView+Reusable.swift in Sources */,
+				BB7A8764282A38300025FA55 /* Shadow+CALayer.swift in Sources */,
+				BB7A8755282966F60025FA55 /* UIView+Extension.swift in Sources */,
+				BB7A8753282966080025FA55 /* Localizable+Strings.swift in Sources */,
+				BB7A87582829B0990025FA55 /* BeersTVCell.swift in Sources */,
+				BB7FDCD32826ADCB00CE0F5A /* BeersViewController.swift in Sources */,
 				BB7FDCCF2826ADCB00CE0F5A /* AppDelegate.swift in Sources */,
+				BBAF6021282B0D80004EBE52 /* ImageLoader.swift in Sources */,
+				BB7A874A282962570025FA55 /* LocalizableKey.swift in Sources */,
+				BB7A8766282A648A0025FA55 /* NetworkManager.swift in Sources */,
+				BBAF601F282B0A2F004EBE52 /* BeersDetailViewController.swift in Sources */,
+				BB7A87622829B5CB0025FA55 /* NibLoadable.swift in Sources */,
 				BB7FDCD12826ADCB00CE0F5A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +557,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BB7A8750282963090025FA55 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7A874F282963090025FA55 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BB7FDCD92826ADCD00CE0F5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -577,7 +700,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PunkApi/Info.plist;
+				INFOPLIST_FILE = PunkApi/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -606,7 +729,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PunkApi/Info.plist;
+				INFOPLIST_FILE = PunkApi/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

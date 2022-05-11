@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  PunkApi
+
+  Created by Rubén Muñoz López on 9/5/22.
+  
+*/
+
+"title_label" = "Beers list";
+"placeholder_search" = "Search the beers";
