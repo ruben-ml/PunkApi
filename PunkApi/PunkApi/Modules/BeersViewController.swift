@@ -106,7 +106,6 @@ extension BeersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: BeersTVCell.self)
         cell.beersData = beers[indexPath.row]
-//        cell.presenter = presenter
         cell.selectionStyle = .none
         return cell
     }
