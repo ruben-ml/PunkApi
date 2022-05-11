@@ -9,8 +9,16 @@ import UIKit
 
 class BeersDetailViewController: UIViewController {
     
+    private lazy var contentStack: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [titleNameLabel, beerImage, taglineLabel, firstBrewedLabel, descriptionLabel])
+        stackView.axis = .vertical
+        stackView.spacing = 16
+        stackView.distribution = .equalSpacing
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
     
-    lazy var titleNameLabel: UILabel = {
+    private lazy var titleNameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.numberOfLines = 0
@@ -20,7 +28,7 @@ class BeersDetailViewController: UIViewController {
         return label
     }()
     
-    lazy var taglineLabel: UILabel = {
+    private lazy var taglineLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.numberOfLines = 0
@@ -30,7 +38,7 @@ class BeersDetailViewController: UIViewController {
         return label
     }()
     
-    lazy var firstBrewedLabel: UILabel = {
+    private lazy var firstBrewedLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.numberOfLines = 0
@@ -40,7 +48,7 @@ class BeersDetailViewController: UIViewController {
         return label
     }()
     
-    lazy var descriptionLabel: UILabel = {
+    private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.numberOfLines = 0
@@ -50,8 +58,9 @@ class BeersDetailViewController: UIViewController {
         return label
     }()
     
-    lazy var beerImage: UIImageView = {
+    private lazy var beerImage: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -68,5 +77,17 @@ class BeersDetailViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        view.addSubview(contentStack)
+        setupUI()
     }
+    
+    private func setupUI() {
+        NSLayoutConstraint.activate([
+            contentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            contentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    
 }

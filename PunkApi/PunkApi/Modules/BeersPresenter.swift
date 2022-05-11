@@ -15,4 +15,10 @@ class BeersPresenter {
     func viewDidLoad() {
         view?.getBeers()
     }
+    
+    func didSelectCellAtIndexPath(indexPath: IndexPath) {
+        view?.didPressCell(sender: indexPath)
+    }
+    
 }
+

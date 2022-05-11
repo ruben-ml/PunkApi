@@ -10,6 +10,7 @@ import Moya
 
 protocol BeersViewApi {
     func getBeers()
+    func didPressCell(sender: Any)
 }
 class BeersViewController: UIViewController {
     
@@ -114,10 +115,17 @@ extension BeersViewController: UITableViewDataSource {
 extension BeersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        presenter.didSelectCellAtIndexPath(indexPath: indexPath)
+        
     }
 }
 
 extension BeersViewController: BeersViewApi {
+    func didPressCell(sender: Any) {
+        let vc = BeersDetailViewController()
+        navigationController?.popToViewController(vc, animated: true)
+    }
+    
     func getBeers() {
         networkProvider.getBeers { data in
             self.beers = data
