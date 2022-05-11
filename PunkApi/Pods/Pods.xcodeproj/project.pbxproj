@@ -193,14 +193,14 @@
 		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		8EBDB08272F94F999B7A6C9D44F3AC3B /* Pods-PunkApiTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PunkApiTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		905ECF2E26BA188C176D46E1CA49DF31 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		90C5BBBB00246463FEAF8E0C7EE4CED1 /* Pods-PunkApi */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PunkApi"; path = Pods_PunkApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C5BBBB00246463FEAF8E0C7EE4CED1 /* Pods_PunkApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91215BB436B9D9CCBA44A5F9FC16427A /* MultiTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiTarget.swift; path = Sources/Moya/MultiTarget.swift; sourceTree = "<group>"; };
 		96FC38B03F8AE4922BB1A58316792B20 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		973EEAC3C644C9C567BE99910616CCE1 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Moya/Response.swift; sourceTree = "<group>"; };
 		975A6F08148F8A8F159521B68461D795 /* Pods-PunkApi-PunkApiUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PunkApi-PunkApiUITests-Info.plist"; sourceTree = "<group>"; };
 		9D690B4C87BA3634ECD76BEFF2072CF9 /* Moya-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Moya-dummy.m"; sourceTree = "<group>"; };
 		9D73DCBB07095EE5E26628CD35C838AD /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Moya/Task.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0BC3543C170A6E119FAAAE3D2D85E62 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		A36D1DEBFC41F30352451736A4D76B45 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		A8117F631CEFDC2B6033AE4540B5FF7C /* Moya-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moya-prefix.pch"; sourceTree = "<group>"; };
@@ -371,7 +371,6 @@
 				1DC74B286C06F4320D9C7E2A5FD3AA9F /* Core */,
 				C8AB652DB7B4D9690D27932E9C3A6EE4 /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -399,7 +398,7 @@
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
 				3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */,
-				90C5BBBB00246463FEAF8E0C7EE4CED1 /* Pods-PunkApi */,
+				90C5BBBB00246463FEAF8E0C7EE4CED1 /* Pods_PunkApi.framework */,
 				CE3ABEEFB83841D8586C95EBFECF4C37 /* Pods-PunkApi-PunkApiUITests */,
 				0F1A1A6CE33307BA154E00BF0CDE376B /* Pods-PunkApiTests */,
 			);
@@ -490,7 +489,6 @@
 				AAA1D6AA96AF5D0E16163059555DC93A /* Validation.swift */,
 				4FE3D51BB02C8EED6C7FF8B9835224CD /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -593,7 +591,7 @@
 			);
 			name = "Pods-PunkApi";
 			productName = Pods_PunkApi;
-			productReference = 90C5BBBB00246463FEAF8E0C7EE4CED1 /* Pods-PunkApi */;
+			productReference = 90C5BBBB00246463FEAF8E0C7EE4CED1 /* Pods_PunkApi.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C6C9437AF1BA7C3BF58E02719A30DC5E /* Pods-PunkApiTests */ = {
