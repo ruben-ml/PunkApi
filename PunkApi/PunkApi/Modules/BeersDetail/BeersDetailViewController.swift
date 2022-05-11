@@ -53,7 +53,7 @@ class BeersDetailViewController: UIViewController {
         label.textColor = .black
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.font = UIFont.init(name: "HelveticaNeue-Bold", size: 18)
+        label.font = UIFont.init(name: "HelveticaNeue-Bold", size: 12)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -78,22 +78,17 @@ class BeersDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .orange
-        view.addSubview(titleNameLabel)
+        view.addSubview(contentStack)
         setupUI()
     }
     
     private func setupUI() {
-//        NSLayoutConstraint.activate([
-//            contentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            contentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-//        ])
         NSLayoutConstraint.activate([
-            titleNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            titleNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            titleNameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20)
-        
+            contentStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            contentStack.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            contentStack.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            contentStack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
         ])
     }
-    
     
 }

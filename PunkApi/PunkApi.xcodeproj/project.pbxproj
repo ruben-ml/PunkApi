@@ -142,16 +142,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BB7A8745282954CB0025FA55 /* Modules */ = {
+		BB28ECCC282C25C60031795A /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				BB7A8743282918310025FA55 /* Beers.swift */,
-				BB7A87462829550E0025FA55 /* BeersPresenter.swift */,
-				BB7A874128290D200025FA55 /* BeersService.swift */,
 				BB7FDCD22826ADCB00CE0F5A /* BeersViewController.swift */,
+				BB7A87462829550E0025FA55 /* BeersPresenter.swift */,
 				BB7A87572829B0990025FA55 /* BeersTVCell.swift */,
+				BB7A874128290D200025FA55 /* BeersService.swift */,
 				BB7A8765282A648A0025FA55 /* NetworkManager.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BB28ECCD282C25F10031795A /* BeersDetail */ = {
+			isa = PBXGroup;
+			children = (
 				BBAF601E282B0A2F004EBE52 /* BeersDetailViewController.swift */,
+			);
+			path = BeersDetail;
+			sourceTree = "<group>";
+		};
+		BB7A8745282954CB0025FA55 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BB28ECCD282C25F10031795A /* BeersDetail */,
+				BB28ECCC282C25C60031795A /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
